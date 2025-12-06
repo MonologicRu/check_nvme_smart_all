@@ -52,7 +52,7 @@ my $UNSAFE_CRIT  = 100;  # unsafe shutdowns
 sub data_units_to_mb { 
     my ($val) = @_; 
     return 0 unless defined $val; 
-    return int($val * 512 / 1024);  # 1 unit = 512 bytes → MB
+    return int($val * 512 / 1024); 
 }
 
 sub kelvin_to_c { return int($_[0]-273.15+0.5); }
@@ -167,3 +167,4 @@ if (!$overall_text) {
 
 print "$overall_text|$perfdata\n";
 exit $overall_status;
+
