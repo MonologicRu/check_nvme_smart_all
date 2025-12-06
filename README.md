@@ -1,5 +1,9 @@
 # check_nvme_smart_all
-Monitor all NVMe devices on the system using nvme-cli.  Collect SMART data and report to Nagios/Icinga via NRPE.
+This plugin checks all NVMe devices on the system using nvme-cli in json mode, collects SMART data and reports to Nagios/Icinga via NRPE.
+[![check_nvme_smart_all-1.0](https://img.shields.io/badge/dev-check_nvme_smart_all_1.0-7a00b9)](https://github.com/xyhtac/check_nvme_smart_all/releases/tag/v.1.11)
+
+#### NVME Perfdata collection:
+[![check_nvme_smart_all collects_perfdata](img/nvme-smart.jpg)](img/nvme-smart.jpg "Screenshot - All NVME SSD Check and perfdata")
 
 # Requirements:
    - Perl with JSON module
